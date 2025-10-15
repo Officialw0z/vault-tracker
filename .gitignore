@@ -1,0 +1,27 @@
+# Node modules (både frontend och backend)
+node_modules/
+
+# Byggfiler (React build eller bundlade filer)
+build/
+dist/
+
+# Loggar
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Miljöfiler
+.env
+.env.local
+
+# Systemfiler
+.DS_Store
+Thumbs.db
+
+# Docker filer och temporära filer
+*.pid
+*.seed
+*.pid.lock
+
+# React cache
+frontend/.eslintcache

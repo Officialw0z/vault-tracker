@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: vault-tracker-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: vault-tracker-frontend
+    env: docker
+    plan: free
+    dockerfilePath: ./frontend/Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://vault-tracker-backend.onrender.com
